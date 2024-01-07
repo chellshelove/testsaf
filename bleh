@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Admin Dashboard</title>
+</head>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">open</span>
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    
+  </div>
+<body>
+    <header>
+        <h1>Welcome to the Admin Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Add Product</a></li>
+            <li><a href="#">View Products</a></li>
+            <li><a href="#">Update Product</a></li>
+            <li><a href="#">Delete Product</a></li>
+            <li><a href="#">Monitor Transactions</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+<main>
+    <section id="view-products">
+        <h2>View Products</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated by the PHP script -->
+            </tbody>
+        </table>
+    </section>
+</main>
+<main>
+    <section id="add-product">
+        <h2>Add Product</h2>
+        <form>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name">
+            <br>
+            <label for="product-price">Product Price:</label>
+            <input type="text" id="product-price" name="product-price">
+            <br>
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" name="product-description"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="update-product">
+        <h2>Update Product</h2>
+        <form>
+            <label for="product-id">Product ID:</label>
+            <input type="text" id="product-id" name="product-id">
+            <br>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name">
+            <br>
+            <label for="product-price">Product Price:</label>
+            <input type="text" id="product-price" name="product-price">
+            <br>
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" name="product-description"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+<main>
+    <section id="delete-product">
+        <h2>Delete Product</h2>
+        <form>
+            <label for="product-id">Product ID:</label>
+            <input type="text" id="product-id" name="product-id">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+<main>
+    <section id="monitor-transactions">
+        <h2>Monitor Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Product Name</th>
+                    <th>Customer Name</th>
+                    <th>Transaction Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated by the PHP script -->
+            </tbody>
+        </table>
+    </section>
+</main>
